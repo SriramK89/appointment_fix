@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor: one
+  user: one
+  time_from: 2020-09-10 11:56:27
+  time_to: 2020-09-11 11:56:27
+
+two:
+  doctor: two
+  user: two
+  time_from: 2020-09-11 11:56:27
+  time_to: 2020-09-12 11:56:27

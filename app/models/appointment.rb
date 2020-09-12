@@ -6,7 +6,7 @@ class Appointment < ApplicationRecord
   validate :fixing_unique_appointments
 
   def fixing_unique_appointments
-    if Appointment.where('? <  time_to and ? > time_from', self.time_from, self.time_to).any?
+    if Appointment.where('? = doctor_id and ? <= time_to and ? >= time_from', self.doctor_id, self.time_from, self.time_to).any?
       self.errors.add(:time_duration, "cannot be conflicting")
     end
   end
